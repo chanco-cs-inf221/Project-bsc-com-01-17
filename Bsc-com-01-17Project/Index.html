@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>           
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta desciption="lottery web app" author=" ulalobanda - ArtistiCode">
+     <link href="css/style.css" type="text/css" rel="stylesheet" >
+     <script src="js/main.js" lang="javascript" type="text/javascript">
+    </script>
+    </head>
+    <body>     
+    <div id="box">
+        <div id="overlay">
+            <div id="form">
+            <form>
+              <fieldset id="field">
+                  <br/>
+                  <legend>Enter your info</legend>
+                   <label>First Name: <input type="text" placeholder="Enter your first name" id="fname"></label> <br/>
+                  <br/>
+                   <label>Last Name: <input type="text" placeholder="Enter your last name" id="lname"></label>
+                  <br/>
+                  <br/>
+                   <input type="radio" name="gender" value="Male">Male 
+                   <input type="radio" name="gender" value="Female">Female
+                   <input type="radio" name="gender" value="Other">Other
+                   <input type="radio" name="gender" value="Rather not say" checked="checked">Rather not say
+                  <br/>
+                  <br/>
+                    <select name="countries">
+                            <option value="Angola">Angola</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Eswatini">Eswatini</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        
+                    </select>
+                    <br/>
+                    <br/>
+                    <input type="submit" name="submit" value="Register" id="regButton" onclick="remove()">
+                    <br/>  
+              </fieldset>
+            </form>
+            </div>
+        </div>
+                <nav>
+                 <div class= "wrapper">
+                     <ul>
+                            <li><h1>Lottery Draw &nbsp;</h1></li>
+                            <li><h1>Lottery Draw &nbsp;</h1></li>
+                            <li><h1>Lottery Draw &nbsp;</h1></li>  
+                    </ul>
+                   </div>
+                </nav>
+       <article id="article">
+           <h2>Hey <span id="name"> there </span>, welcome to the 2019 lottery draw of southern African region.</h2> 
+           <p>Enter a two digit number between 0 and 99 to stand a chance to win different prizes.
+               <dl>
+                   <dt>Grand prize: $10000</dt>
+                    <dd>Match the lottery pick exactly</dd>
+                   <dt>Second prize: $5000</dt>
+                    <dd>Match the lottery digits doesnt have to be exact</dd>
+                   <dt>Third prize:</dt>
+                    <dd>Match at least one digit of the lottery pick</dd>
+                   <dt>Fourth prize: none</dt>
+                    <dd>No prize for failure to match lottery pick, try try again</dd> 
+               </dl>
+           </p>
+       </article>
+       <div id="form2">
+            <hr/>
+           <form >
+                <label>Lottery pick: <input type="text" name="" value="" placeholder="Enter Guess" size="10" id="pick"> </label><br/>
+                <br/>
+                <button id="sbmtg" onclick="draw()">Submit your guess</button>
+                <br/>
+                <br/>
+           </form>
+       </div>
+       <!--footer-->
+       <footer id="footer">
+           <div>
+                Phone : 0880318429 / 0994324826.<br>
+                <br>
+                Email: ulalobanda@gmail.com.
+                
+               <address id="addrs">
+                   Address:
+                   Chancellor College,<br/>
+                   P.O Box 280,<br/>
+                   Zomba,<br/>
+                   Malawi.
+               </address>
+               
+                <button id="span" onclick="display()"> Sign Up</button>
+           </div>
+            
+       </footer>
+    </div>
+    </body>
+</html>
